@@ -1,0 +1,11 @@
+venv/
+.venv/
+*.pdf
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.cer
+credentials*.json
+*secrets*

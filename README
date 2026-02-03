@@ -1,0 +1,14 @@
+Hi!
+
+If you want to use this code for whatever reason, these are the instructions. 
+
+The instructions are the same for both languages.
+
+1. Execute download_papers.py - NOTE (This file produces a paper_list that contains the logs of the execution, if a paper says failed it means that it didnt download correclty, just do it manually, pdfs are a hassle)
+2. Execute verify_pdfs - This step is necessary to ensure pdf health in order for the next steps to work.
+3. Execute inject_context_single_block.py
+4. Execute approach_1_single_agent.py
+5. Execute evaluate_approaches.py
+6. Execute download_ft_papers.py (inside finetuning folder)
+7. Execute generate_raw_ft_dataset.py (inside finetuning folder)
+8. Execute generate_ready_ft_dataset.py (inside the finetuning folder)

@@ -1,0 +1,19 @@
+RESULTS
+
+--- approach_1 ---
+Accuracy:  0.7583
+Precision: 0.2326
+Recall:    0.2857
+F1 Score:  0.2564
+
+--- approach_2 ---
+Accuracy:  0.7750
+Precision: 0.2683
+Recall:    0.3143
+F1 Score:  0.2895
+
+--- approach_3 ---
+Accuracy:  0.8542
+Precision: 0.0000
+Recall:    0.0000
+F1 Score:  0.0000

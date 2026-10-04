@@ -12,3 +12,4 @@ The instructions are the same for both languages.
 6. Execute download_ft_papers.py (inside finetuning folder)
 7. Execute generate_raw_ft_dataset.py (inside finetuning folder)
 8. Execute generate_ready_ft_dataset.py (inside the finetuning folder)
+Layout note (2026-10): datasets live outside this repo at ../datasets/{english,spanish} (research/llms-chomps layout: paper/ datasets/ code/). Scripts resolve them relatively.

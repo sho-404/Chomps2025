@@ -97,7 +97,7 @@ def process_category(folder_path, label_path, category_type):
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    datasets_dir = os.path.join(script_dir, '..', 'datasets')
+    datasets_dir = os.path.join(script_dir, '..', '..', '..', 'datasets', 'spanish')
     
     # Updated to Spanish (es_) label files
     folders = {

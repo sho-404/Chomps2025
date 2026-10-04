@@ -9,7 +9,7 @@ from pypdf import PdfReader
 # Assumes this script is in english/scripts/
 # Adjust relative path if necessary
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PAPERS_DIR = os.path.join(BASE_DIR, "../datasets/papers")
+PAPERS_DIR = os.path.join(BASE_DIR, "../../../datasets/english/papers")
 
 def check_pdf_health(file_path):
     """

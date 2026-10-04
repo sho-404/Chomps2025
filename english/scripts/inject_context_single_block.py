@@ -11,7 +11,7 @@ from fuzzywuzzy import process # For handling title variations
 
 # Paths relative to english/scripts/
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATASETS_DIR = os.path.join(BASE_DIR, "../datasets")
+DATASETS_DIR = os.path.join(BASE_DIR, "../../../datasets/english")
 PAPERS_DIR = os.path.join(DATASETS_DIR, "papers")
 
 FOLDERS_TO_PROCESS = ["test", "train", "validation"]

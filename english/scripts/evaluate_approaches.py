@@ -95,7 +95,7 @@ def process_category(folder_path, folder_name, label_path, category_type):
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    datasets_dir = os.path.join(script_dir, '..', 'datasets')
+    datasets_dir = os.path.join(script_dir, '..', '..', '..', 'datasets', 'english')
     
     folders = {
         'test': 'en_test_label.jsonl',

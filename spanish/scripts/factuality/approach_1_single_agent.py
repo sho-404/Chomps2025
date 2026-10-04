@@ -8,7 +8,7 @@ from openai import AzureOpenAI
 
 # Paths relative to english/scripts/factuality/
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATASETS_DIR = os.path.join(BASE_DIR, "../../datasets")
+DATASETS_DIR = os.path.join(BASE_DIR, "../../../../datasets/spanish")
 
 # Folders to process
 FOLDERS = ["test", "train", "validation"]

@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATASETS_DIR = os.path.join(BASE_DIR, "../../datasets")
+DATASETS_DIR = os.path.join(BASE_DIR, "../../../../datasets/english")
 
 # Folders
 TRAIN_FOLDER = "train"

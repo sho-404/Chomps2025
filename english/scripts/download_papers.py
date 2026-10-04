@@ -6,8 +6,9 @@ import unicodedata
 from pathlib import Path
 
 # --- Configuration ---
-BASE_DIR = Path(__file__).resolve().parent.parent # Points to 'english' folder
-DATASETS_DIR = BASE_DIR / "datasets"
+BASE_DIR = Path(__file__).resolve().parent.parent  # 'english' folder
+REPO_ROOT = BASE_DIR.parent
+DATASETS_DIR = REPO_ROOT.parent / "datasets" / "english"
 PAPERS_DIR = DATASETS_DIR / "papers"
 
 # specific file paths

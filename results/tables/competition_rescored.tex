@@ -1,0 +1,43 @@
+\begin{tabular}{lllccccccccc}
+\hline
+\textbf{Lang.} & \textbf{Split} & \textbf{Approach} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{TN} & \textbf{Acc.} & \textbf{Bal.\ acc.} & \textbf{F1(y)} & \textbf{F1(n)} & \textbf{Macro-F1 [95\% CI]} \\
+\hline
+\multicolumn{12}{l}{\textit{Factuality}} \\
+\hline
+English & Train & Single judge & 86 & 5 & 6 & 11 & 0.8981 & 0.8111 & 0.9399 & 0.6667 & 0.8033 [0.683, 0.895] \\
+English & Train & Council & 78 & 5 & 14 & 11 & 0.8241 & 0.7677 & 0.8914 & 0.5366 & 0.7140 [0.592, 0.816] \\
+English & Validation & Single judge & 189 & 31 & 2 & 18 & 0.8625 & 0.6784 & 0.9197 & 0.5217 & 0.7207 [0.634, 0.796] \\
+English & Validation & Council & 172 & 21 & 19 & 28 & 0.8333 & 0.7360 & 0.8958 & 0.5833 & 0.7396 [0.662, 0.808] \\
+English & Validation & Council + meta-learner & 189 & 33 & 2 & 16 & 0.8542 & 0.6580 & 0.9153 & 0.4776 & 0.6964 [0.604, 0.776] \\
+English & Test & Single judge & 206 & 9 & 4 & 21 & 0.9458 & 0.8405 & 0.9694 & 0.7636 & 0.8665 [0.787, 0.929] \\
+English & Test & Council & 191 & 6 & 19 & 24 & 0.8958 & 0.8548 & 0.9386 & 0.6575 & 0.7981 [0.714, 0.863] \\
+English & Test & Council + meta-learner & 208 & 6 & 2 & 24 & 0.9667 & 0.8952 & 0.9811 & 0.8571 & 0.9191 [0.856, 0.969] \\
+Spanish & Train & Single judge & 126 & 32 & 6 & 16 & 0.7889 & 0.6439 & 0.8690 & 0.4571 & 0.6631 [0.578, 0.740] \\
+Spanish & Train & Council & 120 & 28 & 12 & 20 & 0.7778 & 0.6629 & 0.8571 & 0.5000 & 0.6786 [0.595, 0.756] \\
+Spanish & Validation & Single judge & 166 & 29 & 15 & 30 & 0.8167 & 0.7128 & 0.8830 & 0.5769 & 0.7300 [0.658, 0.792] \\
+Spanish & Validation & Council & 164 & 21 & 17 & 38 & 0.8417 & 0.7751 & 0.8962 & 0.6667 & 0.7814 [0.714, 0.839] \\
+Spanish & Validation & Council + meta-learner & 168 & 21 & 13 & 38 & 0.8583 & 0.7861 & 0.9081 & 0.6909 & 0.7995 [0.733, 0.856] \\
+Spanish & Test & Single judge & 140 & 35 & 21 & 44 & 0.7667 & 0.7133 & 0.8333 & 0.6111 & 0.7222 [0.658, 0.782] \\
+Spanish & Test & Council & 126 & 32 & 35 & 47 & 0.7208 & 0.6888 & 0.7900 & 0.5839 & 0.6869 [0.625, 0.749] \\
+Spanish & Test & Council + meta-learner & 125 & 30 & 36 & 49 & 0.7250 & 0.6983 & 0.7911 & 0.5976 & 0.6944 [0.631, 0.755] \\
+\hline
+\multicolumn{12}{l}{\textit{Fluency}} \\
+\hline
+English & Train & Single judge & 12 & 16 & 4 & 76 & 0.8148 & 0.7880 & 0.5455 & 0.8837 & 0.7146 [0.601, 0.812] \\
+English & Train & Council & 5 & 15 & 11 & 77 & 0.7593 & 0.5747 & 0.2778 & 0.8556 & 0.5667 [0.462, 0.667] \\
+English & Validation & Single judge & 38 & 27 & 16 & 159 & 0.8208 & 0.7793 & 0.6387 & 0.8809 & 0.7598 [0.693, 0.818] \\
+English & Validation & Council & 24 & 46 & 30 & 140 & 0.6833 & 0.5986 & 0.3871 & 0.7865 & 0.5868 [0.517, 0.652] \\
+English & Validation & Council + meta-learner & 0 & 0 & 54 & 186 & 0.7750 & 0.5000 & 0.0000 & 0.8732 & 0.4366 [0.419, 0.453] \\
+English & Test & Single judge & 22 & 46 & 22 & 150 & 0.7167 & 0.6327 & 0.3929 & 0.8152 & 0.6040 [0.533, 0.674] \\
+English & Test & Council & 12 & 53 & 32 & 143 & 0.6458 & 0.5012 & 0.2202 & 0.7709 & 0.4955 [0.435, 0.561] \\
+English & Test & Council + meta-learner & 0 & 0 & 44 & 196 & 0.8167 & 0.5000 & 0.0000 & 0.8991 & 0.4495 [0.434, 0.463] \\
+Spanish & Train & Single judge & 8 & 20 & 28 & 124 & 0.7333 & 0.5417 & 0.2500 & 0.8378 & 0.5439 [0.462, 0.625] \\
+Spanish & Train & Council & 7 & 22 & 29 & 122 & 0.7167 & 0.5208 & 0.2154 & 0.8271 & 0.5213 [0.446, 0.601] \\
+Spanish & Validation & Single judge & 15 & 13 & 99 & 113 & 0.5333 & 0.5142 & 0.2113 & 0.6686 & 0.4400 [0.382, 0.503] \\
+Spanish & Validation & Council & 9 & 14 & 105 & 112 & 0.5042 & 0.4839 & 0.1314 & 0.6531 & 0.3922 [0.342, 0.448] \\
+Spanish & Validation & Council + meta-learner & 0 & 0 & 114 & 126 & 0.5250 & 0.5000 & 0.0000 & 0.6885 & 0.3443 [0.316, 0.372] \\
+Spanish & Test & Single judge & 10 & 33 & 25 & 172 & 0.7583 & 0.5624 & 0.2564 & 0.8557 & 0.5561 [0.488, 0.632] \\
+Spanish & Test & Council & 11 & 30 & 24 & 175 & 0.7750 & 0.5840 & 0.2895 & 0.8663 & 0.5779 [0.500, 0.651] \\
+Spanish & Test & Council + meta-learner & 0 & 0 & 35 & 205 & 0.8542 & 0.5000 & 0.0000 & 0.9213 & 0.4607 [0.447, 0.474] \\
+\hline
+\end{tabular}

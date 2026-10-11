@@ -1,6 +1,8 @@
 """Write the LaTeX table bodies that the revised paper \\input{}s from paper/tables/.
 
 Every table body is generated from the stores under ../results (never typed by
+hand). Since the condensed revision, these FULL tables are written to ../results/tables/
+(the repository record); the manuscript tables come from compact_tables.py.
 hand) so that the paper and the data cannot drift apart. Run after report.py:
 
     ../.venv/bin/python -m chomps.paper_tables [--paper-dir ../paper]
@@ -380,7 +382,7 @@ def significance(paper_tables: Path) -> None:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--paper-dir", default=str(config.ROOT / "paper"))
+    ap.add_argument("--paper-dir", default=str(config.RESULTS), help="full tables go to results/tables by default; the paper uses compact_tables.py")
     a = ap.parse_args()
     out = Path(a.paper_dir) / "tables"
     out.mkdir(exist_ok=True)

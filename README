@@ -39,7 +39,8 @@ the chomps/ package and is reproducible with:
   ../.venv/bin/python -m chomps.error_attribution
   ../.venv/bin/python -m chomps.cost
   ../.venv/bin/python -m chomps.report                   # result tables -> ../results/tables/
-  ../.venv/bin/python -m chomps.paper_tables             # LaTeX table bodies -> ../paper/tables/
+  ../.venv/bin/python -m chomps.paper_tables             # full LaTeX tables (reviewer record) -> ../results/tables/
+  ../.venv/bin/python -m chomps.compact_tables           # the four condensed manuscript tables -> ../paper/tables/
 
 Design contract: chomps/DESIGN.md. Every LLM call is cached in ../cache/llm_cache.sqlite,
 so re-running any command after a crash costs nothing. Fine-tuning jobs and their

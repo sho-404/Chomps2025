@@ -1,0 +1,14 @@
+\begin{tabular}{llcccccccc}
+\hline
+\textbf{Lang.} & \textbf{Context} & \textbf{Tokens (med.)} & \textbf{Verbatim} & \textbf{Refusals} & \textbf{Answers} & \textbf{Answers or partial} & \textbf{Sufficient} & \textbf{Verdict acc.} & \textbf{Agreement} ($\kappa$) \\
+\hline
+English & Pseudo-RAG (competition spans) & 50 & 99.2 & 0.0\% & 100.0\% & 100.0\% & 100.0\% & 0.967 (240) & 1.00 \\
+English & Pseudo-RAG (rerun) & 52 & 99.1 & 0.0\% & -- & -- & -- & -- & -- \\
+English & BM25, $k=3$ & 446 & 100.0 & 0.0\% & 77.5\% & 93.3\% & 85.4\% & 0.961 (205) & 0.93 \\
+English & Dense, $k=3$ & 454 & 100.0 & 0.0\% & 83.3\% & 97.1\% & 89.2\% & 0.967 (214) & 0.99 \\
+Spanish & Pseudo-RAG (competition spans) & 110 & 96.8 & 3.3\% & 92.9\% & 96.7\% & 94.2\% & 0.743 (226) & 0.86 \\
+Spanish & Pseudo-RAG (rerun) & 110 & 97.4 & 0.0\% & -- & -- & -- & -- & -- \\
+Spanish & BM25, $k=3$ & 473 & 100.0 & 0.0\% & 19.2\% & 66.2\% & 28.3\% & 0.706 (68) & 0.84 \\
+Spanish & Dense, $k=3$ & 456 & 100.0 & 0.0\% & 60.4\% & 93.8\% & 72.5\% & 0.753 (174) & 0.93 \\
+\hline
+\end{tabular}

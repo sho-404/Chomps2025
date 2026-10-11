@@ -1,0 +1,45 @@
+\begin{tabular}{llllrrrr}
+\hline
+\textbf{Lang.} & \textbf{Stage} & \textbf{Model} & \textbf{Context / track} & \textbf{Input tok.\ (med.)} & \textbf{Output tok.\ (mean)} & \textbf{Latency (med., s)} & \textbf{USD per 1{,}000 calls} \\
+\hline
+English & Judge & GPT-5 mini & BM25, $k=3$ & 829 & 157 & 2.06 & 0.53 \\
+English & Judge & GPT-5 mini & Dense, $k=3$ & 842 & 158 & 2.03 & 0.53 \\
+English & Judge & GPT-5 mini & Full document & 17489 & 194 & 2.68 & 5.14 \\
+English & Judge & GPT-5 mini & No context & 413 & 337 & 3.27 & 0.78 \\
+English & Judge & FT GPT-4.1 mini (fact.) & Pseudo-RAG (competition spans) & 440 & 1 & 0.54 & 0.38 \\
+English & Judge & FT GPT-4.1 --o (fact.) & Pseudo-RAG (competition spans) & 440 & 1 & 0.53 & 0.10 \\
+English & Judge & GPT-4.1 mini & Pseudo-RAG (competition spans) & 440 & 1 & 0.61 & 0.19 \\
+English & Judge & GPT-4.1 --o & Pseudo-RAG (competition spans) & 440 & 1 & 0.67 & 0.05 \\
+English & Judge & GPT-5 mini & Pseudo-RAG (competition spans) & 440 & 140 & 1.93 & 0.40 \\
+English & Judge & GPT-5 mini & Pseudo-RAG (rerun) & 440 & 139 & 1.93 & 0.40 \\
+English & Judge & FT GPT-4.1 mini (fact.) & fluency (no context) & 425 & 2 & 0.56 & 0.35 \\
+English & Judge & FT GPT-4.1 --o (fact.) & fluency (no context) & 425 & 1 & 0.50 & 0.09 \\
+English & Judge & FT GPT-4.1 mini (flu.) & fluency (no context) & 425 & 1 & 0.96 & 0.35 \\
+English & Judge & FT GPT-4.1 --o (flu.) & fluency (no context) & 425 & 1 & 0.53 & 0.09 \\
+English & Judge & GPT-4.1 mini & fluency (no context) & 425 & 1 & 0.51 & 0.17 \\
+English & Judge & GPT-4.1 --o & fluency (no context) & 425 & 1 & 0.58 & 0.04 \\
+English & Judge & GPT-5 mini & fluency (no context) & 424 & 202 & 2.37 & 0.51 \\
+English & Retrieval & text-embedding-3-large & embedding index (one paper) & 32826 & 0 & -- & 4.66 \\
+English & Retrieval & GPT-5 mini & extraction (one paper) & 17265 & 546 & 5.53 & 5.79 \\
+\hline
+Spanish & Judge & GPT-5 mini & BM25, $k=3$ & 1078 & 281 & 2.91 & 0.84 \\
+Spanish & Judge & GPT-5 mini & Dense, $k=3$ & 1030 & 299 & 2.96 & 0.86 \\
+Spanish & Judge & GPT-5 mini & Full document & 18705 & 326 & 3.53 & 5.65 \\
+Spanish & Judge & GPT-5 mini & No context & 604 & 411 & 3.89 & 0.98 \\
+Spanish & Judge & FT GPT-4.1 mini (fact.) & Pseudo-RAG (competition spans) & 723 & 6 & 0.51 & 0.67 \\
+Spanish & Judge & FT GPT-4.1 --o (fact.) & Pseudo-RAG (competition spans) & 723 & 1 & 0.54 & 0.16 \\
+Spanish & Judge & GPT-4.1 mini & Pseudo-RAG (competition spans) & 723 & 1 & 0.66 & 0.33 \\
+Spanish & Judge & GPT-4.1 --o & Pseudo-RAG (competition spans) & 723 & 1 & 0.61 & 0.08 \\
+Spanish & Judge & GPT-5 mini & Pseudo-RAG (competition spans) & 722 & 275 & 2.82 & 0.74 \\
+Spanish & Judge & GPT-5 mini & Pseudo-RAG (rerun) & 714 & 274 & 2.76 & 0.75 \\
+Spanish & Judge & FT GPT-4.1 mini (fact.) & fluency (no context) & 597 & 7 & 0.68 & 0.51 \\
+Spanish & Judge & FT GPT-4.1 --o (fact.) & fluency (no context) & 597 & 1 & 0.48 & 0.12 \\
+Spanish & Judge & FT GPT-4.1 mini (flu.) & fluency (no context) & 597 & 1 & 0.92 & 0.49 \\
+Spanish & Judge & FT GPT-4.1 --o (flu.) & fluency (no context) & 597 & 1 & 0.56 & 0.12 \\
+Spanish & Judge & GPT-4.1 mini & fluency (no context) & 597 & 1 & 0.59 & 0.25 \\
+Spanish & Judge & GPT-4.1 --o & fluency (no context) & 597 & 1 & 0.64 & 0.06 \\
+Spanish & Judge & GPT-5 mini & fluency (no context) & 596 & 268 & 2.72 & 0.69 \\
+Spanish & Retrieval & text-embedding-3-large & embedding index (one paper) & 34939 & 0 & -- & 4.87 \\
+Spanish & Retrieval & GPT-5 mini & extraction (one paper) & 18245 & 926 & 6.68 & 6.75 \\
+\hline
+\end{tabular}

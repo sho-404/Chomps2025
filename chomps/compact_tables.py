@@ -120,17 +120,17 @@ def retrieval_ablation(out: Path) -> None:
     rows = {(r["lang"], r["condition"]): r for r in _read("retrieval_ablation") if r["split"] == "test"}
     cost = {}
     for r in _read("cost"):
-        if r["stage"] == "judge" and r["lang"] == "english" and r["judge"] == "gpt-5-mini" and r["temp"] == "default":
+        if r["stage"] == "judge" and r["lang"] == "english" and r["track"] == "factuality" and r["judge"] == "gpt-5-mini" and r["temp"] == "default":
             cost[r["condition"]] = r
-    lines = [r"\begin{tabular}{lcccccc}", r"\hline",
+    lines = [r"\begin{tabular}{lccccccc}", r"\hline",
              r"\textbf{Context given to the judge} & \multicolumn{2}{c}{\textbf{English}} & \multicolumn{2}{c}{\textbf{Spanish}} & "
-             r"\textbf{Input tokens} & \textbf{USD / 1k judgments} \\",
-             r" & \textbf{Macro-F1} & \textbf{95\% CI} & \textbf{Macro-F1} & \textbf{95\% CI} & \textbf{(median, En.)} & \textbf{(En.)} \\",
+             r"\textbf{Input tokens} & \textbf{Latency (s)} & \textbf{USD / 1k judgments} \\",
+             r" & \textbf{Macro-F1} & \textbf{95\% CI} & \textbf{Macro-F1} & \textbf{95\% CI} & \textbf{(median, En.)} & \textbf{(median, En.)} & \textbf{(En.)} \\",
              r"\hline"]
     for cond, name in ABL:
         en, es, c = rows[("english", cond)], rows[("spanish", cond)], cost[cond]
         lines.append(f"{name} & {_f(en['macro_f1'])} & {_ci(en)} & {_f(es['macro_f1'])} & {_ci(es)} & "
-                     f"{float(c['prompt_tokens_median']):,.0f} & {float(c['usd_per_1000_examples_per_repeat']):.2f} \\\\")
+                     f"{float(c['prompt_tokens_median']):,.0f} & {float(c['latency_s_median']):.1f} & {float(c['usd_per_1000_examples_per_repeat']):.2f} \\\\")
     lines += [r"\hline", r"\end{tabular}"]
     (out / "retrieval_ablation.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 

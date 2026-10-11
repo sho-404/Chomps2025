@@ -2,6 +2,9 @@
 \hline
 \textbf{Lang.} & \textbf{Context} & \textbf{Correct} & \textbf{Retrieval failure} & \textbf{Judge failure} & \textbf{Judge and graders vs.\ gold} \\
 \hline
+English & Pseudo-RAG (competition spans) & 229 (95.4\%) & 0 (0.0\%) & 4 (1.7\%) & 7 (2.9\%) \\
+English & BM25, $k=3$ & 222 (92.5\%) & 10 (4.2\%) & 1 (0.4\%) & 7 (2.9\%) \\
+English & Dense, $k=3$ & 223 (92.9\%) & 5 (2.1\%) & 5 (2.1\%) & 7 (2.9\%) \\
 Spanish & Pseudo-RAG (competition spans) & 181 (75.4\%) & 5 (2.1\%) & 13 (5.4\%) & 41 (17.1\%) \\
 Spanish & BM25, $k=3$ & 183 (76.2\%) & 39 (16.2\%) & 5 (2.1\%) & 13 (5.4\%) \\
 Spanish & Dense, $k=3$ & 186 (77.5\%) & 12 (5.0\%) & 9 (3.8\%) & 33 (13.8\%) \\

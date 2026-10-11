@@ -1,0 +1,7 @@
+lang,track,condition,protocol,class_weight,features,judges,fmt,temp,repeat,kind,term,estimate,ci_lo,ci_hi,n,n_pos,n_boot,seed
+english,fluency,none,original,balanced,votes,gpt-5-mini;ft-flu-en-mini;ft-flu-en-nano,judge,default,0,coef,intercept,-2.048602,-3.412009,-1.176544,108,16,2000,0
+english,fluency,none,original,balanced,votes,gpt-5-mini;ft-flu-en-mini;ft-flu-en-nano,judge,default,0,coef,gpt-5-mini,2.083024,1.262929,3.275724,108,16,2000,0
+english,fluency,none,original,balanced,votes,gpt-5-mini;ft-flu-en-mini;ft-flu-en-nano,judge,default,0,coef,ft-flu-en-mini,1.448451,0.234543,2.680318,108,16,2000,0
+english,fluency,none,original,balanced,votes,gpt-5-mini;ft-flu-en-mini;ft-flu-en-nano,judge,default,0,coef,ft-flu-en-nano,-0.051691,-1.211211,0.953122,108,16,2000,0
+english,fluency,none,original,balanced,votes,gpt-5-mini;ft-flu-en-mini;ft-flu-en-nano,judge,default,0,macro_f1,validation,0.741727,,,240,54,2000,0
+english,fluency,none,original,balanced,votes,gpt-5-mini;ft-flu-en-mini;ft-flu-en-nano,judge,default,0,macro_f1,test,0.646982,,,240,44,2000,0

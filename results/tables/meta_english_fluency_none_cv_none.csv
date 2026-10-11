@@ -1,0 +1,13 @@
+lang,track,condition,protocol,class_weight,features,judges,fmt,temp,repeat,kind,term,estimate,ci_lo,ci_hi,n,n_pos,n_boot,seed
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,intercept,-2.384765,-2.782291,-2.079554,348,70,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,gpt-5-mini,2.478380,1.895527,3.133797,348,70,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,ft-fact-en-mini,0.060030,-0.625649,0.689343,348,70,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,ft-fact-en-nano,-0.425173,-1.207329,0.293563,348,70,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,fold1,0.489982,,,70,14,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,fold2,0.568567,,,70,14,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,fold3,0.717304,,,70,14,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,fold4,0.759886,,,69,14,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,fold5,0.542238,,,69,14,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,mean,0.615595,,,348,70,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,cv_macro_f1,std,0.116765,,,348,70,2000,0
+english,fluency,none,cv,none,votes,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,macro_f1,test,0.663222,,,240,44,2000,0

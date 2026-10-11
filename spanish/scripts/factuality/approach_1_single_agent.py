@@ -19,7 +19,7 @@ OUTPUT_FILENAME = "approach_1_answers_factuality.jsonl"
 # Azure OpenAI Config
 ENDPOINT = "https://gpt-shroom.cognitiveservices.azure.com/"
 DEPLOYMENT = "gpt-5-mini"
-SUBSCRIPTION_KEY = ""
+SUBSCRIPTION_KEY = os.environ["AZURE_OPENAI_API_KEY"]  # set in the environment; never commit keys
 API_VERSION = "2025-04-01-preview"
 
 client = AzureOpenAI(

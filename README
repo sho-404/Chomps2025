@@ -13,3 +13,34 @@ The instructions are the same for both languages.
 7. Execute generate_raw_ft_dataset.py (inside finetuning folder)
 8. Execute generate_ready_ft_dataset.py (inside the finetuning folder)
 Layout note (2026-10): datasets live outside this repo at ../datasets/{english,spanish} (research/llms-chomps layout: paper/ datasets/ code/). Scripts resolve them relatively.
+
+=====================================================================
+Revision package (October 2026) — chomps/
+=====================================================================
+The scripts above are the competition pipeline, kept verbatim as the record of
+what was submitted (their prompts are extracted byte for byte by
+chomps/extract_prompts.py). Everything added for the journal revision lives in
+the chomps/ package and is reproducible with:
+
+  python3.12 -m venv ../.venv && ../.venv/bin/pip install -r requirements.txt
+  # ../.env must define AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY
+  cd code
+  ../.venv/bin/python -m pytest tests -q                 # offline tests (no API)
+  ../.venv/bin/python common/fix_bad_pdfs.py             # after download_papers.py / verify_pdfs.py
+  ../.venv/bin/python -m chomps.retrieval                # context stores: pseudo_rag(_rerun), bm25_k*, dense_k*, full, none
+  ../.venv/bin/python -m chomps.judge --help             # judge runs -> ../results/votes/
+  ../.venv/bin/python finetuning/run_finetune.py status  # fine-tuning jobs (launch/status/deploy)
+  ../.venv/bin/python -m chomps.fluency_synth            # synthetic fluency fine-tuning data
+  ../.venv/bin/python -m chomps.synth_qc --verbatim      # audit of the synthetic factuality data
+  ../.venv/bin/python -m chomps.meta --help              # meta-learner (original and CV protocols)
+  ../.venv/bin/python -m chomps.logits                   # token-logit analysis
+  ../.venv/bin/python -m chomps.retrieval_eval           # retrieval statistics + grading sheets
+  ../.venv/bin/python -m chomps.grades --workflow-json ../results/retrieval_eval/grading_workflow_result.json
+  ../.venv/bin/python -m chomps.error_attribution
+  ../.venv/bin/python -m chomps.cost
+  ../.venv/bin/python -m chomps.report                   # result tables -> ../results/tables/
+  ../.venv/bin/python -m chomps.paper_tables             # LaTeX table bodies -> ../paper/tables/
+
+Design contract: chomps/DESIGN.md. Every LLM call is cached in ../cache/llm_cache.sqlite,
+so re-running any command after a crash costs nothing. Fine-tuning jobs and their
+deployments are logged in finetuning/jobs.jsonl.

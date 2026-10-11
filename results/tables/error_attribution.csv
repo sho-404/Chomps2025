@@ -1,0 +1,4 @@
+lang,condition,n,correct,retrieval_failure,judge_failure,label_or_ambiguous,pct_correct,pct_retrieval_failure,pct_judge_failure,pct_label_or_ambiguous
+spanish,pseudo_rag,240,181,5,13,41,75.4,2.1,5.4,17.1
+spanish,bm25_k3,240,183,39,5,13,76.2,16.2,2.1,5.4
+spanish,dense_k3,240,186,12,9,33,77.5,5.0,3.8,13.8

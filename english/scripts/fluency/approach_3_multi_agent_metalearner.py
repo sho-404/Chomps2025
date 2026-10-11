@@ -24,7 +24,7 @@ LABEL_KEY = "has_fluency_mistakes"
 
 # Azure Config
 ENDPOINT = "https://gpt-shroom.cognitiveservices.azure.com/"
-SUBSCRIPTION_KEY = ""
+SUBSCRIPTION_KEY = os.environ["AZURE_OPENAI_API_KEY"]  # set in the environment; never commit keys
 
 # Judges Configuration
 JUDGES = [

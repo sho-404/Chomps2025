@@ -1,0 +1,13 @@
+lang,split,track,n,n_y,n_n,pct_y,pct_n
+english,train,factuality,108,92,16,85.2,14.8
+english,train,fluency,108,16,92,14.8,85.2
+english,validation,factuality,240,191,49,79.6,20.4
+english,validation,fluency,240,54,186,22.5,77.5
+english,test,factuality,240,210,30,87.5,12.5
+english,test,fluency,240,44,196,18.3,81.7
+spanish,train,factuality,180,132,48,73.3,26.7
+spanish,train,fluency,180,36,144,20.0,80.0
+spanish,validation,factuality,240,181,59,75.4,24.6
+spanish,validation,fluency,240,114,126,47.5,52.5
+spanish,test,factuality,240,161,79,67.1,32.9
+spanish,test,fluency,240,35,205,14.6,85.4

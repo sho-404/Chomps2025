@@ -1,0 +1,15 @@
+lang,track,condition,protocol,class_weight,features,judges,fmt,temp,repeat,kind,term,estimate,ci_lo,ci_hi,n,n_pos,n_boot,seed
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,intercept,-2.407420,-3.402916,-1.697902,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,gpt-5-mini,0.342276,-0.556786,1.115752,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,ft-flu-es-mini,1.016789,0.127669,1.956275,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,ft-flu-es-nano,-0.314354,-1.177175,0.576072,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:mean,1.403053,0.684929,2.044488,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:std,-0.147212,-0.697870,0.555122,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:min,-0.174162,-0.899416,0.484907,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:p10,-0.434227,-1.153409,0.372524,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:p25,-0.391746,-1.158856,0.413192,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:frac_below_15,0.038276,-0.497269,0.488837,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:n_tokens,-0.446497,-0.996613,0.077985,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,coef,logit:mean_first_10,-0.047506,-0.500261,0.527167,180,36,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,macro_f1,validation,0.375676,,,240,114,2000,0
+spanish,fluency,none,original,none,votes+logits,gpt-5-mini;ft-flu-es-mini;ft-flu-es-nano,judge,default,0,macro_f1,test,0.536364,,,240,35,2000,0

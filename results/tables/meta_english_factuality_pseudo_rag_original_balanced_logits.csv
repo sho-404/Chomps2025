@@ -1,0 +1,15 @@
+lang,track,condition,protocol,class_weight,features,judges,fmt,temp,repeat,kind,term,estimate,ci_lo,ci_hi,n,n_pos,n_boot,seed
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,intercept,-1.619966,-2.147820,-0.325323,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,gpt-5-mini,2.466896,1.650512,3.266661,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,ft-fact-en-mini,0.420120,-0.298121,1.506545,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,ft-fact-en-nano,1.066847,0.101498,2.063371,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:mean,-0.744402,-1.055473,-0.207333,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:std,0.328069,-0.251534,0.945708,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:min,-0.637287,-1.269643,0.062873,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:p10,-0.912975,-1.557949,-0.256582,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:p25,-0.289194,-1.035685,0.514292,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:frac_below_15,-0.696779,-1.252057,0.450183,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:n_tokens,0.075983,-0.586536,1.033591,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,coef,logit:mean_first_10,1.207372,0.074172,1.828016,108,92,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,macro_f1,validation,0.772407,,,240,191,2000,0
+english,factuality,pseudo_rag,original,balanced,votes+logits,gpt-5-mini;ft-fact-en-mini;ft-fact-en-nano,judge,default,0,macro_f1,test,0.769795,,,240,210,2000,0

@@ -8,7 +8,7 @@ from openai import AzureOpenAI
 ENDPOINT = "https://gpt-shroom.cognitiveservices.azure.com/"
 DEPLOYMENT = "gpt-5-mini"
 # It is safer to use os.getenv, but you can paste your key here if needed
-SUBSCRIPTION_KEY = "DPKIyguzI8NDCOsmqx4jdMI0vAB5NA9hpeTeggi0m9SIQ5nGgEpuJQQJ99BJACYeBjFXJ3w3AAABACOGkO2z"
+SUBSCRIPTION_KEY = os.environ["AZURE_OPENAI_API_KEY"]  # set in the environment; never commit keys
 API_VERSION = "2024-12-01-preview"
 
 PAPERS_DIR = os.path.join(os.path.dirname(__file__), "papers")

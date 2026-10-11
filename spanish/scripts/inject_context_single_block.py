@@ -25,7 +25,7 @@ FILE_MAPPING = {
 ENDPOINT = "https://llm-mosaic.cognitiveservices.azure.com/"
 MODEL_NAME = "gpt-5-mini"
 DEPLOYMENT = "gpt-5-mini"
-SUBSCRIPTION_KEY = ""
+SUBSCRIPTION_KEY = os.environ["AZURE_OPENAI_API_KEY"]  # set in the environment; never commit keys
 API_VERSION = "2024-12-01-preview"
 
 client = AzureOpenAI(

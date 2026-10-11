@@ -19,7 +19,7 @@ OUTPUT_FILENAME = "approach_2_answers_fluency.jsonl"
 
 # Shared Azure Config
 ENDPOINT = "https://gpt-shroom.cognitiveservices.azure.com/"
-SUBSCRIPTION_KEY = ""
+SUBSCRIPTION_KEY = os.environ["AZURE_OPENAI_API_KEY"]  # set in the environment; never commit keys
 
 # --- JUDGE 1: GPT-5 Mini ---
 JUDGE_1_CONFIG = {
